@@ -5,8 +5,13 @@ using namespace std;
 int volume(int height, int width, int length);
 
 // 1. Define a structure called Box
+struct box1 {
 // have the integer data types Height, Width, Length
-
+int height, width, length;
+};
+struct box1 {
+int height, width, length;
+};
 // Do not change the main function
 int main() {
     // 2. Create a variable called box1 of the Box structure type
@@ -39,5 +44,9 @@ int main() {
     
     return 0;
 }
-
+int volume(int height, int width, int length){
+  int v;
+  v = height * width * length;
+  return v;
+}
 // Implement the functions here
